@@ -19,11 +19,8 @@
         },
         "ServerStorage": {
             "$className": "ServerStorage",
-            "Source": {
+            "Services": {
                 "$path": "src/ServerStorage"
-            },
-            "Packages": {
-                "$path": "src/ServerStorage/ExternalPackages"
             }
         },
         "StarterPlayer": {
