@@ -1,5 +1,5 @@
 local Knit = require(game:GetService("ReplicatedStorage").Packages.Knit)
-require(ServerStorage.Services.NeuralBlockService)
+require(game:GetService("ServerStorage").Services.NeuralBlockService)
 
 -- Load services or controllers here
 --Knit.addServices(ServerStorage.Services)
