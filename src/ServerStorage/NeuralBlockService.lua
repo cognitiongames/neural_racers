@@ -19,25 +19,13 @@ function NeuralBlockService:KnitStart()
 
     local car = NeuralCar.new(1, carFolder)
     car:createCar()
-
-    local move = true
-    local rotate = true
-
+    car:steer(10)
+    local x = 0
+    
     while true do
-        wait(0.01)
-        if move then
-            move = false
-            car:move().Completed:Connect(function()
-                move = true
-                car:left()
-            end)
-            if car:getSpeed() < 0.3 then
-                car:throttle()
-                
-            end
-        end
-        
-        --car:left()
+        wait(1)
+        car:throttle(x)
+        x += 1
     end
 end
 
